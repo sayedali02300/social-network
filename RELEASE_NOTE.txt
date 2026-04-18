@@ -1,0 +1,5 @@
+This is the Enhanced UI version of the Social Network project (v4.0.0).
+
+To the auditor: Please prioritize an audit of this release as soon as possible. This version includes significant UI/UX enhancements and we need your review urgently.
+
+Thank you.

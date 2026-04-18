@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" fill="none">
+  <!-- Bubble 1 -->
+  <rect x="15" y="25" width="90" height="55" rx="14" fill="#CBD5E1"/>
+  <polygon points="30,80 30,96 46,80" fill="#CBD5E1"/>
+  <!-- Bubble 2 -->
+  <rect x="75" y="60" width="90" height="55" rx="14" fill="#93C5FD"/>
+  <polygon points="150,115 150,131 134,115" fill="#93C5FD"/>
+  <!-- Dot fills (empty) -->
+  <circle cx="50" cy="52" r="4" fill="#94A3B8"/>
+  <circle cx="65" cy="52" r="4" fill="#94A3B8"/>
+  <circle cx="80" cy="52" r="4" fill="#94A3B8"/>
+  <circle cx="110" cy="87" r="4" fill="#2563EB"/>
+  <circle cx="125" cy="87" r="4" fill="#2563EB"/>
+  <circle cx="140" cy="87" r="4" fill="#2563EB"/>
+  <text x="90" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#6B7280" font-weight="600">No conversations</text>
+</svg>

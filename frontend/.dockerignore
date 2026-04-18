@@ -1,0 +1,13 @@
+# Git
+.git
+.gitignore
+
+# Dependencies — reinstalled inside the image via npm ci
+node_modules/
+
+# Previous build output
+dist/
+
+# Local env overrides
+.env.local
+.env.*.local

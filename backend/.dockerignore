@@ -1,0 +1,18 @@
+# Git
+.git
+.gitignore
+
+# Build artifacts
+*.exe
+*.test
+
+# Local database files — the container uses a named volume
+*.db
+*.db-shm
+*.db-wal
+
+# Local uploads — the container uses a named volume
+uploads/
+
+# Test databases
+*_test_*.db

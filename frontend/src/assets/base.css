@@ -1,0 +1,180 @@
+/* ============================================================
+   Design tokens — single source of truth for the UI system
+   ============================================================ */
+:root {
+  /* ── Brand ── */
+  --brand-500: #2563EB;     /* primary blue */
+  --brand-600: #1D4ED8;     /* hover state */
+  --brand-700: #1E40AF;     /* active/pressed */
+  --brand-100: #DBEAFE;     /* light tint backgrounds */
+  --brand-50:  #EFF6FF;     /* very light tint */
+
+  /* ── Backwards-compat aliases ── */
+  --primary-blue:      var(--brand-500);
+  --primary-hover:     var(--brand-600);
+  --primary-light:     var(--brand-100);
+  --primary-lightblue: rgba(37, 99, 235, 0.33);
+
+  /* ── Neutrals ── */
+  --gray-950: #030712;
+  --gray-900: #111827;
+  --gray-800: #1F2937;
+  --gray-700: #374151;
+  --gray-600: #4B5563;
+  --gray-500: #6B7280;
+  --gray-400: #9CA3AF;
+  --gray-300: #D1D5DB;
+  --gray-200: #E5E7EB;
+  --gray-100: #F3F4F6;
+  --gray-50:  #F9FAFB;
+  --white:    #FFFFFF;
+
+  /* ── Surfaces ── */
+  --surface-base:    var(--white);
+  --surface-raised:  var(--gray-50);
+  --surface-overlay: var(--white);
+  --border-default:  var(--gray-200);
+  --border-focus:    var(--brand-500);
+
+  /* ── Backwards-compat surface aliases ── */
+  --bg-main:    var(--gray-100);
+  --bg-card:    var(--white);
+  --bg-sidebar: var(--gray-50);
+  --border-color: var(--gray-200);
+  --hover:      var(--gray-200);
+  --black-color: #000;
+
+  /* ── Typography colors ── */
+  --text-primary:   var(--gray-900);
+  --text-secondary: var(--gray-500);
+  --text-muted:     var(--gray-400);
+  --text-inverse:   var(--white);
+  --text-white:     var(--white);
+  --font-weight: 500;
+
+  /* ── Typography scale ── */
+  --text-xs:   0.72rem;   /* timestamps, badges */
+  --text-sm:   0.84rem;   /* secondary copy, metadata */
+  --text-base: 0.95rem;   /* body text */
+  --text-md:   1.1rem;    /* section headings */
+  --text-lg:   1.3rem;    /* page titles */
+  --text-xl:   1.65rem;   /* auth page headlines */
+  --text-2xl:  2rem;      /* hero headings */
+
+  /* ── Status ── */
+  --success:    #16A34A;
+  --success-bg: #DCFCE7;
+  --warning:    #D97706;
+  --warning-bg: #FEF3C7;
+  --danger:     #DC2626;
+  --danger-bg:  #FEE2E2;
+  --info:       #0EA5E9;
+  --info-bg:    #E0F2FE;
+
+  /* ── Backwards-compat status aliases ── */
+  --status-success: var(--success);
+  --status-warning: var(--warning);
+  --status-error:   var(--danger);
+  --bg-error:       #d85757;
+  --status-info:    var(--info);
+
+  /* ── Motion ── */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-enter:    cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit:     cubic-bezier(0.4, 0, 1, 1);
+  --dur-fast:   120ms;
+  --dur-base:   200ms;
+  --dur-slow:   350ms;
+
+  /* ── Radius ── */
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   14px;
+  --radius-xl:   18px;
+  --radius-full: 9999px;
+
+  /* ── Shadow ── */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(17,24,39,0.08);
+  --shadow-lg: 0 12px 36px rgba(17,24,39,0.12);
+  --shadow-xl: 0 24px 52px rgba(17,24,39,0.14);
+
+  /* ── Navbar height (used by feed layout) ── */
+  --navbar-height: 60px;
+
+  /* ── Breakpoints (reference only — actual breakpoints live in media queries)
+     --bp-mobile:  0 – 599px   (single column, minimal padding)
+     --bp-tablet:  600 – 899px (two columns where applicable)
+     --bp-desktop: 900px+      (full layout)
+  ── */
+}
+
+/* ── Global reset ── */
+html,
+body,
+#app {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* ── Global focus-visible standard ── */
+:focus-visible {
+  outline: 2px solid var(--brand-500);
+  outline-offset: 2px;
+}
+
+/* ── Global button press micro-interaction ── */
+button:active:not(:disabled),
+a:active {
+  transform: scale(0.97);
+  transition: transform 100ms ease;
+}
+
+/* ── Touch target minimum (44×44px) on mobile ── */
+@media (max-width: 768px) {
+  button,
+  a,
+  [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  /* Inline links don't need the min-width */
+  p a,
+  span a,
+  li a {
+    min-width: unset;
+    min-height: unset;
+  }
+}
+
+body {
+  background-color: var(--bg-main);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

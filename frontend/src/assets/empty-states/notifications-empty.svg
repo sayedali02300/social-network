@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" fill="none">
+  <!-- Bell body -->
+  <path d="M60 100 Q56 60 90 50 Q124 60 120 100Z" fill="#CBD5E1" stroke="#94A3B8" stroke-width="2"/>
+  <!-- Bell top -->
+  <circle cx="90" cy="48" r="6" fill="#94A3B8"/>
+  <!-- Bell base -->
+  <path d="M60 100 Q90 115 120 100" fill="#94A3B8"/>
+  <ellipse cx="90" cy="108" rx="9" ry="5" fill="#94A3B8"/>
+  <!-- Clapper -->
+  <circle cx="90" cy="114" r="5" fill="#64748B"/>
+  <!-- Zzz -->
+  <text x="115" y="55" font-family="Inter, sans-serif" font-size="14" fill="#2563EB" font-weight="800">z</text>
+  <text x="125" y="42" font-family="Inter, sans-serif" font-size="18" fill="#2563EB" font-weight="800">z</text>
+  <text x="139" y="28" font-family="Inter, sans-serif" font-size="22" fill="#2563EB" font-weight="800">z</text>
+  <text x="90" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#6B7280" font-weight="600">All caught up!</text>
+</svg>

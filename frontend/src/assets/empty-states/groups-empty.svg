@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" fill="none">
+  <!-- Person 1 (left) -->
+  <circle cx="50" cy="55" r="16" fill="#CBD5E1"/>
+  <path d="M22 100c0-15.464 12.536-28 28-28s28 12.536 28 28" fill="#CBD5E1"/>
+  <!-- Person 2 (center, highlighted) -->
+  <circle cx="90" cy="48" r="20" fill="#93C5FD"/>
+  <path d="M58 100c0-17.673 14.327-32 32-32s32 14.327 32 32" fill="#93C5FD"/>
+  <!-- Person 3 (right) -->
+  <circle cx="130" cy="55" r="16" fill="#CBD5E1"/>
+  <path d="M102 100c0-15.464 12.536-28 28-28s28 12.536 28 28" fill="#CBD5E1"/>
+  <!-- Question mark -->
+  <text x="90" y="58" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#2563EB" font-weight="800">?</text>
+  <text x="90" y="148" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#6B7280" font-weight="600">No groups yet</text>
+</svg>
